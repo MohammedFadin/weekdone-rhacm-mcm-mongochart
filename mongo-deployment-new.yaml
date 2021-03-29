@@ -57,7 +57,7 @@ spec:
       volumes:
       - name: mongodb-data
         persistentVolumeClaim:
-          claimName: mongo
+          claimName: weekdone-mongo-mongodb
       - name: mongodb-ssl
         secret:
           secretName: mongodb-ssl
