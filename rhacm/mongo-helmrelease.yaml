@@ -2,7 +2,7 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: HelmRelease
 metadata:
-  name: nignx-new-fadin
+  name: mongodb-chart
 repo:
   chartName: bitnami/mongodb
   source:
@@ -10,6 +10,5 @@ repo:
       urls:
         - https://charts.bitnami.com/bitnami
     type: helmrepo
-  version: 10.9.1
 spec:
   replicaCount: 2
