@@ -4,11 +4,12 @@ kind: HelmRelease
 metadata:
   name: mongodb-chart
 repo:
-  chartName: bitnami/mongodb
+  chartName: mongodb
   source:
-    helmRepo:
+    github:
+      chartPath: /bitnami/mongodb/
       urls:
-        - https://charts.bitnami.com/bitnami
+        - https://github.com/bitnami/charts.git
     type: helmrepo
 spec:
-  replicaCount: 2
+  replicaCount: 1
