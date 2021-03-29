@@ -4,12 +4,12 @@ kind: HelmRelease
 metadata:
   name: nignx-new-fadin
 repo:
-  chartName: nginx-chart
+  chartName: bitnami/mongodb
   source:
     helmRepo:
       urls:
-        - https://raw.githubusercontent.com/open-cluster-management/multicloud-operators-subscription-release/main/test/helmrepo/nginx-chart-0.1.0.tgz
+        - https://charts.bitnami.com/bitnami
     type: helmrepo
-  version: 0.1.0
+  version: 10.9.1
 spec:
-  replicaCount: 3
+  replicaCount: 2
